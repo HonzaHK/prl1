@@ -23,6 +23,7 @@ if [ -f $EXECUTABLE ]; then
 	#vyrobeni souboru s random cisly
 	dd if=/dev/random bs=1 count=$numbers of=numbers
 	#spusteni
+	((numbers++))
 	mpirun -np $numbers $EXECUTABLE
 	#./$EXECUTABLE
 fi
