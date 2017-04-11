@@ -1,6 +1,6 @@
 #!/bin/bash
-SOURCE="p1.c"
-EXECUTABLE="p1"
+SOURCE="es.c"
+EXECUTABLE="es"
 FLAGS="-std=gnu99 -Wall -Wextra -pedantic"
 
 if [ -f $EXECUTABLE ]; then
